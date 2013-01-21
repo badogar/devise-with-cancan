@@ -25,3 +25,4 @@ gem "better_errors", ">= 0.2.0", :group => :development
 gem "binding_of_caller", ">= 0.6.8", :group => :development
 gem "omniauth"
 gem "omniauth-twitter"
+gem "omniauth-facebook"
