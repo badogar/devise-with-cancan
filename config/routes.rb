@@ -1,6 +1,6 @@
 Bill::Application.routes.draw do
-  match '/auth/:provider/callback', :to => 'sessions#create'
-  #match '/auth/:provider/callback' => 'authentications#create'
+  #match '/auth/:provider/callback', :to => 'sessions#create'
+  match '/auth/:provider/callback' => 'authentications#create'
   devise_for :users, :controllers => { :registrations => 'registrations' }
   resources :authentications
   authenticated :user do
